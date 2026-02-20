@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pe-competitive-test
+    runtime: node
+    buildCommand: ""
+    startCommand: node index.js
+    envVars:
+      - key: LOG_LEVEL
+        value: warn
+      - key: API_URL
+        value: https://api.prod.example.com
+      - key: FEATURE_FLAG
+        value: "false"
+      - key: DB_PASSWORD
+        sync: false
+      - key: STRIPE_KEY
+        sync: false
