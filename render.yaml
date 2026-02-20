@@ -4,6 +4,8 @@ services:
     runtime: node
     buildCommand: ""
     startCommand: node index.js
+    previews:
+      generation: automatic
     envVars:
       - key: LOG_LEVEL
         value: warn
