@@ -1,11 +1,10 @@
+previews:
+  generation: automatic
 services:
   - type: web
     name: pe-competitive-test
     runtime: node
-    buildCommand: ""
     startCommand: node index.js
-    previews:
-      generation: automatic
     envVars:
       - key: LOG_LEVEL
         value: warn
